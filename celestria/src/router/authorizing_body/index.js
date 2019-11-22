@@ -6,14 +6,14 @@ const routes = [{
         title: 'New Authorizing Body - Celestria'
     }
 }, {
-    path: '/edit-authorizing-body',
+    path: '/edit-authorizing-body/:authorizing_body_id',
     name: 'edit-authorizing-body',
     component: () => import('source/pages/authorizing_body/EditAuthorizingBody.vue'),
     meta: {
         title: 'Edit Authorizing Body - Celestria'
     }
 }, {
-    path: '/view-authorizing-body',
+    path: '/view-authorizing-body/:authorizing_body_id',
     name: 'view-authorizing-body',
     component: () => import('source/pages/authorizing_body/ViewAuthorizingBody.vue'),
     meta: {

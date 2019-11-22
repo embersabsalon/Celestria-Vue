@@ -8,10 +8,10 @@ Vue.use(Router)
 
 const routes = [
     ...AuthorizingBodyRoutes,
-    ...DashboardRoutes
+    DashboardRoutes
 ];
 
-const router = new VueRouter({
+const router = new Router({
     routes,
     mode: 'history'
 });
