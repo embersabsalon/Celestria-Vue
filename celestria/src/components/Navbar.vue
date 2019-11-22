@@ -1,7 +1,13 @@
 <template>
-    <div id="navbar">
-        Navbar
-    </div>
+    <nav>
+        <div class="nav-wrapper purple">
+            <div class="container">
+                <router-link to="/" class="brand-logo">
+                    Celestria
+                </router-link>
+            </div>
+        </div>
+    </nav>
 </template>
 
 <script>
