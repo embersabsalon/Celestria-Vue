@@ -1,15 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+
+import DashboardRoutes from './dashboard';
+import AuthorizingBodyRoutes from './authorizing_body';
 
 Vue.use(Router)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
-})
+const routes = [
+    ...AuthorizingBodyRoutes,
+    ...DashboardRoutes
+];
+
+const router = new VueRouter({
+    routes,
+    mode: 'history'
+});
+
+export default router;
