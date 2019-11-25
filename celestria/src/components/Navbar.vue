@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <div class="nav-wrapper purple">
+        <div class="nav-wrapper indigo">
             <div class="container">
                 <router-link to="/" class="brand-logo">
                     Celestria
