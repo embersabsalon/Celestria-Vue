@@ -9,8 +9,8 @@
 
 <script>
 import Navbar from 'source/components/Navbar';
-import firebase from 'firebase';
-import firebaseConfig from 'source/firebaseConfig'
+// import firebase from 'firebase';
+// import firebaseConfig from 'source/firebaseConfig'
 
 export default {
   name: 'App',
@@ -18,9 +18,9 @@ export default {
     Navbar
   },
 
-  mounted() {
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-  }
+  // mounted() {
+  //   firebase.initializeApp(firebaseConfig);
+  //   firebase.analytics();
+  // }
 }
 </script>
