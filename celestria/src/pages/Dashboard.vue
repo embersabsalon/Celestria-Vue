@@ -5,7 +5,6 @@
                 <i class="fa fa-plus"></i>
             </router-link>
         </div> -->
-
         <div class="section"></div>
           <main>
             <center>
@@ -24,14 +23,14 @@
 
                     <div class='row'>
                       <div class='input-field col s12'>
-                        <input class='validate' type='email' name='email' id='email' />
-                        <label for='email'>Enter your email</label>
+                        <input v-model="username" class='validate' type='email' name='email' id='email' />
+                        <label for='email'>Enter your username/email</label>
                       </div>
                     </div>
 
                     <div class='row'>
                       <div class='input-field col s12'>
-                        <input class='validate' type='password' name='password' id='password' />
+                        <input v-model="password" class='validate' type='password' name='password' id='password'/>
                         <label for='password'>Enter your password</label>
                       </div>
                       <label style='float: right;'>
@@ -62,8 +61,47 @@
         name: 'Dashboard',
         data () {
             return {
+                username: '',
+                password: '',
+            }
+        },
+
+        methods: {
+            submitLogin(){
 
             }
         }
     }
 </script>
+
+<style scoped>
+    body {
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;
+        }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    body {
+      background: #fff;
+    }
+
+    .input-field input[type=date]:focus + label,
+    .input-field input[type=text]:focus + label,
+    .input-field input[type=email]:focus + label,
+    .input-field input[type=password]:focus + label {
+      color: #e91e63;
+    }
+
+    .input-field input[type=date]:focus,
+    .input-field input[type=text]:focus,
+    .input-field input[type=email]:focus,
+    .input-field input[type=password]:focus {
+      border-bottom: 2px solid #e91e63;
+      box-shadow: none;
+    }
+
+</style>
